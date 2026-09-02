@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor De Moeda</title>
+    <link rel="shortcut icon" href="iconeMoeda.png" type="image/x-icon">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <div id="Container">
+            <div class="ladoEsquerdo"></div>
+            <div class="ladoDireito">
+                <div class="conteinerForm">
+                    <h1>
+                        Conversor De Moeda
+                    </h1>
+                    <div class="campo">
+                        <label for="valor">Valor a converter</label>
+                        <input type="number" id="valor" placeholder="Digite um Valor em Real">
+                    </div>
+                    <div class="campo">
+                        <label for="moeda">Informe a Moeda</label>
+                        <select id="conversor">
+                            <option selected disabled>Selecione</option>
+                            <option value="1">Dólar</option>
+                            <option value="2">Euro</option>
+                        </select>
+                    </div>
+
+                    <button onclick="converter()">Converter</button>
+                    <div id="resultado"></div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
